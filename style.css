@@ -89,19 +89,22 @@ body{
     border-radius: var(--border-radius);
 }
 
-@media screen and (max-width:520px){
-    .box{
-        width: 80%;
-    }
-    .qr-footer a{
-        padding: 12px;
-        font-size: 16px;
-    }
-}
-@media(max-width: 768px){
-    #sizes{
-        height: fit-content;
-        width: fit-content;
-    }
 
+/* Responsive QR code image */
+.qr-body canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media query for smaller devices */
+@media screen and (max-width: 480px) {
+  .qr-header h1 {
+    font-size: 1.25rem;
+  }
+
+  .qr-footer a,
+  .qr-footer button {
+    width: 100%;
+    padding: 12px;
+  }
 }
