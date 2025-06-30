@@ -98,3 +98,10 @@ body{
         font-size: 16px;
     }
 }
+@media(max-width: 768px){
+    #sizes{
+        height: fit-content;
+        width: fit-content;
+    }
+
+}
